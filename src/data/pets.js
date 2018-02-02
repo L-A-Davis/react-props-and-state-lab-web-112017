@@ -281,6 +281,8 @@ const allPets = [
   }
 ];
 
+
 export const getAll = () => allPets;
 export const getByType = type => allPets.filter(pet => pet.type === type);
 export const getBetweenAge = (from, to) => allPets.filter(pet => pet.age >= from && pet.age <= to);
+export default allPets;
